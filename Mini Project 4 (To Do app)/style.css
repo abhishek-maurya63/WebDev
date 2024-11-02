@@ -1,0 +1,164 @@
+:root {
+  --theme: #73bbbb;
+  --button: #229799;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  /* color: white; */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  height: 98%;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.top {
+  width: 100%;
+  height: 80px;
+  background-color: var(--theme);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top input {
+  width: 20%;
+  height: 50%;
+  margin-left: 2%;
+  border-radius: 10px;
+}
+.top input::placeholder {
+  padding-left: 10px;
+}
+.top button {
+  width: 8%;
+  height: 50%;
+  margin-right: 2%;
+  border-radius: 10px;
+  background-color: var(--theme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top button {
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Gilroy";
+  background-color: var(--button);
+}
+
+.bottom {
+  flex-grow: 1;
+  width: 100%;
+  height: calc(100% - 80px);
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+}
+.left {
+  width: 80px;
+  background-color: var(--theme);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
+
+.right {
+  flex-grow: 1;
+  /* background: #383f3f; */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.greet {
+  height: 20px;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+.card-container {
+  margin: 20px;
+  /* background-color: aquamarine; */
+  height: 85%;
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  grid-template-rows: repeat(auto, 1fr);
+  gap: 50px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.card {
+  width: 100%;
+  height: 230px;
+  background-color: var(--theme);
+  border-radius: 10px;
+  position: relative;
+}
+.card button {
+  width: 70px;
+  height: 27px;
+  background-color: var(--button);
+  border-radius: 25px;
+  margin: 5px;
+}
+.card button:hover {
+  background-color: rgb(70, 156, 127);
+}
+.card button {
+  font-size: 13px;
+  font-weight: bold;
+  background-color: var(--button);
+}
+.title {
+  font-size: 20px;
+  margin: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.d-t {
+  margin: 5px;
+}
+.content {
+  font-size: 15px;
+  margin: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.delete {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
